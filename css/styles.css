@@ -1,7 +1,9 @@
 :root {
     --blue: #36c;
+    --blue-light: #447ff5;
     --gray: rgb(144, 144, 144);
 }
+
 
 * {
     margin: 0;
@@ -27,6 +29,32 @@ button {
 }
 
 
+.sprite {
+    background-image: linear-gradient(transparent,transparent),url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-e99844f6.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.svg-Wikipedia_wordmark {
+    background-position: 0 -254px;
+    width: 176px;
+    height: 32px;
+}
+
+.svg-language-icon {
+    background-position: 0 -617px;
+    width: 22px;
+    height: 22px;
+}
+
+.svg-arrow-down-blue {
+    background-position: 0 -527px;
+    width: 14px;
+    height: 14px;
+}
+
+
 /* search section */
 .search-section {
     padding-top: 2rem;
@@ -46,8 +74,13 @@ button {
     width: 57px;
 }
 
+.title-container .title {
+    color: transparent;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
 .search-bar-container {
- 
     display: flex;
     align-items: center;
     width: 100%;
@@ -83,8 +116,51 @@ button {
     justify-content: center;
     background: var(--blue);
     color: white;
+    cursor: pointer;
 }
 
+.search-bar-container .search-button:hover {
+    background: var(--blue-light);
+}
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+}
+
+.lenguage-articles a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--blue);
+}
+.lenguage-articles strong {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: .4rem;
+}
+
+.lenguage-articles span, p {
+    color: black;
+}
+
+.translator-selector-wrapper {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    color: var(--blue);
+    height: 2rem;
+    outline: 1.6rem solid #fff;
+    border: 1px solid #a2a9b1;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0 1rem;
+}
+
+.translator-selector-wrapper p {
+    color: var(--blue);
+}
 /* footer */
 footer {
     min-height: 60vh;
