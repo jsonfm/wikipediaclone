@@ -3,6 +3,7 @@
     --blue-light: #447ff5;
     --gray: rgb(144, 144, 144);
     --gray-light: #f8f9fa;
+    --gray-light-2: #eaecf0;
 }
 
 
@@ -10,6 +11,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 input {
@@ -90,6 +96,35 @@ button {
     height: 47px;
 }
 
+.svg-Wikivoyage-logo_sister {
+    background-position: 0 -446px;
+    width: 36px;
+    height: 36px;
+}
+
+.svg-Wiktionary-logo_sister {
+    background-position: 0 -482px;
+    width: 37px;
+    height: 37px;
+}
+
+.svg-Wikibooks-logo_sister {
+    background-position: 0 -126px;
+    width: 37px;
+    height: 37px;
+}
+
+.svg-Wikinews-logo_sister {
+    background-image: url(portal/wikipedia.org/assets/img/Wikinews-logo_sister.png);
+    background-position: 0 0;
+    -webkit-background-size: 47px 26px;
+    -moz-background-size: 47px 26px;
+    background-size: 47px 26px;
+    width: 47px;
+    height: 26px;
+}
+
+
 /* search section */
 .search-section {
     padding-top: 2rem;
@@ -160,8 +195,19 @@ button {
 
 .languages {
     display: flex;
+    /* justify-content: center; */
     flex-wrap: wrap;
-    min-height: 100px;
+    gap: 10px;
+    min-height: 120px;
+}
+
+.lenguage-articles {
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid; */
 }
 
 .lenguage-articles a {
@@ -210,6 +256,7 @@ footer {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
 }
 
 .app {
@@ -235,20 +282,32 @@ footer {
 .item div a {
     color: var(--blue);
 }
+
 .projects {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    row-gap: 10px;
+    height: 100%;
 }
 
 .project {
     width: 170px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
 }
 
 .project-link {
     display: flex;
     gap: 10px;
+}
+
+.project:hover {
+    background: var(--gray-light-2);
 }
 
 .project-text {
@@ -257,8 +316,15 @@ footer {
     max-width: 120px;
 }
 
+.app-stores {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 10px;
+}
+
 .license {
-    margin-top: 2rem;
+    padding: 2rem 0;
     text-align: center;
 }
 
