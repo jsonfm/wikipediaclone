@@ -2,6 +2,7 @@
     --blue: #36c;
     --blue-light: #447ff5;
     --gray: rgb(144, 144, 144);
+    --gray-light: #f8f9fa;
 }
 
 
@@ -28,6 +29,11 @@ button {
     padding: 0 .5rem;
 }
 
+.bg-gray-light {
+    background: var(--gray-light);
+}
+
+/*  */
 
 .sprite {
     background-image: linear-gradient(transparent,transparent),url(https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-e99844f6.svg);
@@ -54,6 +60,35 @@ button {
     height: 14px;
 }
 
+.svg-Wikimedia-logo_black {
+    background-position: 0 -212px;
+    width: 42px;
+    height: 42px;
+}
+
+.svg-badge_google_play_store {
+    background-position: 0 -541px;
+    width: 124px;
+    height: 38px;
+}
+
+.svg-badge_ios_app_store {
+    background-position: 0 -579px;
+    width: 110px;
+    height: 38px;
+}
+
+.svg-wikipedia_app_tile {
+    background-position: 0 -719px;
+    width: 42px;
+    height: 42px;
+}
+
+.svg-Commons-logo_sister {
+    background-position: 0 0;
+    width: 47px;
+    height: 47px;
+}
 
 /* search section */
 .search-section {
@@ -161,7 +196,78 @@ button {
 .translator-selector-wrapper p {
     color: var(--blue);
 }
+
+
+
 /* footer */
 footer {
     min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+.app .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 1rem .5rem;
+}
+
+.item div {
+    text-align: center;
+}
+
+.item div a {
+    color: var(--blue);
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project {
+    width: 170px;
+}
+
+.project-link {
+    display: flex;
+    gap: 10px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 120px;
+}
+
+.license {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .flex {
+        flex-direction: row;
+    }
+
+    .project {
+        width: 250px;
+    }
 }
